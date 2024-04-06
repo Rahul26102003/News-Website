@@ -1,28 +1,57 @@
+body {
+    background-color: rgb(241, 237, 221);
+}
+
+.main {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    ;
+    
+}
+
+svg {
+    margin-top: -200px;
+    margin-bottom: -170px;
+}
+
 button {
     width: fit-content;
     padding: 10px;
-    background-color: rgb(206, 155, 253);
+    background-color: rgb(168, 99, 232);
     margin: 10px;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-weight: bold;
 }
 
 .category-buttons {
     margin-bottom: 20px;
 }
 
+.country-buttons {
+    margin-bottom: 20px;
+}
+
 .news-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card {
-    border: 1px solid #ccc;
+    border: 5px solid black;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     height: 500px;
+    background-color: white;
+    overflow: auto;
 }
 
 .card-image {
@@ -34,7 +63,7 @@ button {
 }
 
 .card-content {
-    padding: 10px;
+    padding: 0px;
 }
 
 @media (max-width: 768px) {
